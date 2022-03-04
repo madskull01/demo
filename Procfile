@@ -1,1 +1,1 @@
-web: guincorn demo.wsgi
+guincorn demo.wsgi --log-file -
