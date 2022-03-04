@@ -1,0 +1,40 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">TeamName</th>
+        <th scope="col">Teamlogo</th>
+       
+        
+        
+        
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for da in data %}
+      <tr>
+        <th scope="row">{{ da.teamname }}</th>
+       
+        <td>
+            <img src="{{ da.teamlogo.url }}" alt="" style="height: 100px;">
+        
+        </td>
+       
+        
+        <td><a href="/delete_data/{{ da.id }}"><button type="submit" class="btn btn-danger">Delete</button></a>
+            <a href="{% url 'update_data' da.pk %}"><button type="submit" class="btn btn-success">edit</button></a>
+            <a href="/viewplayer/{{ da.id }}"><button type="submit" class="btn btn-primary">view</button></a></td>
+      </tr>
+      {% endfor %}
+      
+    </tbody>
+  </table>
+
+{% endblock %}

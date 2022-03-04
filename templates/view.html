@@ -1,0 +1,115 @@
+<{% extends 'home.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<div class="w-50 m-auto p-4"> 
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+       
+        <th scope="col">Player1name</th>
+        <td>{{ data.player1name }}</td>
+      </tr>
+      <tr>
+        <th scope="col">Player1image</th>
+        <td>
+            <img src="{{ data.player1image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+      </tr>
+    
+      <tr>
+        <th scope="col">Player2name</th>
+        <td>{{ data.player2name }}</td>
+      </tr>
+
+    <tr>
+        <th scope="col">Player2image</th>
+        <td>
+            <img src="{{ data.player2image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+    </tr>
+    <tr>
+        <th scope="col">Player3name</th>
+        <td>{{ data.player3name }}</td>
+    </tr>
+    <tr>
+        <th scope="col">Player3image</th>
+        <td>
+            <img src="{{ data.player3image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+        
+
+    </tr>
+    <tr>
+        <th scope="col">Player4name</th>
+        <td>{{ data.player4name }}</td>
+    </tr>
+    <tr>
+        <th scope="col">Player4image</th>
+        <td>
+            <img src="{{ data.player4image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+    </tr>
+    <tr>
+        <th scope="col">Player5name</th>
+        <td>{{ data.player5name }}</td>
+    </tr>
+    <tr>
+        <th scope="col">Player5image</th>
+        <td>
+            <img src="{{ data.player5image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+    </tr>
+    <tr>
+        <th scope="col">Player6name</th>
+        <td>{{ data.player6name }}</td>
+    </tr>
+    <tr>
+        <th scope="col">Player6image</th>
+        <td>
+            <img src="{{ data.player6image.url }}" alt="" style="height: 100px;">
+        
+        </td>
+    </tr>
+        
+        
+     <tr> 
+        <th scope="col">Action</th>
+        <td><a href="/delete_data/{{ da.id }}"><button type="submit" class="btn btn-danger">Delete</button></a>
+            <a href="/update_data/{{ da.pk }}"><button type="submit" class="btn btn-success">edit</button></a>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+    
+    
+        
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+    </tbody>
+  </table>
+  </div>
+{% endblock %}
