@@ -1,1 +1,1 @@
-gunincorn demo.wsgi --log-file -
+gunicorn demo.wsgi --log-file -
