@@ -1,2 +1,2 @@
-guincorn demo.wsgi --log-file -
-bash: guincorn:
+gunincorn demo.wsgi --log-file -
+bash: gunicorn:
